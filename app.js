@@ -16,7 +16,7 @@ const app = new Vue ({
         showImg() 
         {
             // make an api call
-            apiString = "https://api.themoviedb.org/3/movie/now_playing?api_key=   your api key   &language=en-US&page=1"
+            apiString = "https://api.themoviedb.org/3/movie/now_playing?api_key=YOURAPIKEY&language=en-US&page=1"
             axios.get(apiString).then (function(e) {
                 for (i = 0; i < 3; i++) {
                     // access different elements of the data returned and set page elements to that
